@@ -1,0 +1,17 @@
+nav{
+  height: @mobileNav;
+  width: 100%;
+  background-color: @navColor;
+  @media screen and (min-width: 600px) {
+    height: @desktopNav;
+  }
+
+  a{
+    text-decoration: none;
+    color: @fontColor;
+    &:nth-child(odd){
+      color: @subFontColor;
+    }
+  }
+}
+
